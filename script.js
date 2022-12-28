@@ -28,6 +28,10 @@
         name: 'Samsung',
         pattern: 'www.awin1.com(.*)\?p=(?<baseUrl>.*)',
       },
+      {
+        name: 'redirectingat.com',
+        pattern: 'go.redirectingat.com/.*url=(?<baseUrl>.*).*',
+      },
     ];
 
     var StripRedirect = function(URL) {
