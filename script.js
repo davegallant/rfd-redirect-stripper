@@ -31,6 +31,8 @@
       {
         name: 'redirectingat.com',
         pattern: 'go.redirectingat.com/.*url=(?<baseUrl>.*).*',
+      },
+      {
         name: 'homedepot',
         pattern: 'the-home-depot-ca.pxf.io(.*)\?u=(?<baseUrl>.*)',
       },
