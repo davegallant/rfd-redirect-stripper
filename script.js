@@ -1,10 +1,10 @@
 // ==UserScript==
+// @name         RedFlagDeals Redirect Stripper
 // @author       Dave Gallant
 // @description  Strip redirect links on forums.redflagdeals.com
 // @downloadURL  https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/script.js
 // @grant        none
 // @match        *://forums.redflagdeals.com/*
-// @name         RedFlagDeals Redirect Stripper
 // @namespace    http://tampermonkey.net/
 // @updateURL    https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/script.js
 // @version      0.0.1
@@ -23,6 +23,10 @@
       {
         name: 'Best Buy',
         pattern: 'bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)',
+      },
+      {
+        name: 'Samsung',
+        pattern: 'www.awin1.com(.*)\?p=(?<baseUrl>.*)',
       },
     ];
 
