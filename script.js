@@ -25,6 +25,10 @@
         pattern: 'bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)',
       },
       {
+        name: 'HP',
+        pattern: 'www.awin1.com(.*)\&clickref=\&p=(?<baseUrl>.*)\&.*',
+      },
+      {
         name: 'Samsung',
         pattern: 'www.awin1.com(.*)\?p=(?<baseUrl>.*)',
       },
