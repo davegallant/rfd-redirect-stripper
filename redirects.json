@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Amazon",
+    "pattern": "www.amazon.ca/gp/redirect.html\\?ie=UTF8&location=(?<baseUrl>.*?)(&|ref%3D|%3F)"
+  },
+  {
+    "name": "Best Buy",
+    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "HP",
+    "pattern": "www.awin1.com(.*)&clickref=&p=(?<baseUrl>.*)&.*"
+  },
+  {
+    "name": "Samsung",
+    "pattern": "www.awin1.com(.*)?p=(?<baseUrl>.*)"
+  },
+  {
+    "name": "redirectingat.com",
+    "pattern": "go.redirectingat.com/.*url=(?<baseUrl>.*).*"
+  },
+  {
+    "name": "homedepot",
+    "pattern": "the-home-depot-ca.pxf.io(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "redirectingat",
+    "pattern": "go.redirectingat.com(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "adidas-canada",
+    "pattern": "adidas-canada.sjv.io(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "canadiantire",
+    "pattern": "imp.i([0-9]*).net(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "underarmour",
+    "pattern": "www.awin1.com(.*)?ued=(?<baseUrl>.*)"
+  },
+  {
+    "name": "lenovo",
+    "pattern": "(.*).evyy.net(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "thesource",
+    "pattern": "www.kqzyfj.com(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "walmart",
+    "pattern": "click.linksynergy.com(.*)?murl=(?<baseUrl>.*)&u1=.*"
+  }
+]
