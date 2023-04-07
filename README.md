@@ -12,12 +12,22 @@ This was originally a [Tampermonkey](https://www.tampermonkey.net/) userscript b
 
 Copy [script.js](./script.js) into Tampermonkey.
 
-## Chrome extension
+## Browser Extensions
 
-To load the browser extension, clone this repo and load [extensions/chrome](./extensions/chrome/).
+The browser extensions are currently not packaged or published anywhere.
+
+### Chrome
+
+To load the chrome extension, clone this repo and load [extensions/chrome](./extensions/chrome/).
+
+### Firefox
+
+To load the firefox extension, clone this repo and load [extensions/firefox](./extensions/firefox/).
+
+Go to `about:addons`, and ensure that all permissions are granted. If this is not done, the extension will not have permission to execute content scripts.
 
 ## Updating redirects
 
-The chrome extension will update itself by periodically fetching the latest [redirects.json](redirects.json).
+The browser extensions will update the list of redirects by periodically fetching the latest [redirects.json](redirects.json).
 
 Open a pull request to this repo to update the redirects.
