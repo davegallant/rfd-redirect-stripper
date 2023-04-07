@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "rfd-redirect-stripper",
+  "description": "Strip tracking redirects on rfd",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["*://forums.redflagdeals.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["*://forums.redflagdeals.com/*"]
+}
