@@ -31,3 +31,13 @@ Go to `about:addons`, and ensure that all permissions are granted. If this is no
 The browser extensions will update the list of redirects by periodically fetching the latest [redirects.json](redirects.json).
 
 Open a pull request to this repo to update the redirects.
+
+An easy way to test regex: [regex101.com](https://regex101.com/).
+
+New config can be tested by pointing the config url of the extension to your own branch.
+
+For example:
+
+```
+https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/my-new-branch/redirects.json
+```

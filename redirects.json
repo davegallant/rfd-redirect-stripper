@@ -50,5 +50,13 @@
   {
     "name": "walmart",
     "pattern": "click.linksynergy.com(.*)?murl=(?<baseUrl>.*)&u1=.*"
+  },
+  {
+    "name": "dpbolvw.net",
+    "pattern": "www.dpbolvw.net(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "jdoqocy.com",
+    "pattern": "www.jdoqocy.com(.*)?url=(?<baseUrl>.*)&sid=rfdcb"
   }
 ]
