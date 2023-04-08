@@ -4,7 +4,7 @@ rfd-redirect-stripper strips affiliate redirects from deal links posted on https
 
 ## Why?
 
-This helps prevent broken links from collisions with adblockers. Only use if you are experiencing difficulties opening links. Affiliate links and referrals help support RedFlagDeals.com.
+This helps navigate around broken links when using certain adblockers.
 
 ## Tampermonkey Script
 
