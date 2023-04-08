@@ -36,6 +36,8 @@ An easy way to test regex: [regex101.com](https://regex101.com/).
 
 New config can be tested by pointing the config url of the extension to your own branch.
 
+![image](https://user-images.githubusercontent.com/4519234/230703252-a7e09cf6-d0e5-4f54-8973-3b93d4a4a5a2.png)
+
 For example:
 
 ```
