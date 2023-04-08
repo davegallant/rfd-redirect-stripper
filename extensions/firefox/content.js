@@ -20,11 +20,10 @@ function stripRedirect(URL, redirectRegex) {
 function stripRedirects() {
   var Links = document.querySelectorAll("a.postlink, a.autolinker_link");
 
-  browser.storage.local.get("rfd-redirects", function (redirectRegex) {
+  browser.storage.local.get("redirects", function (result) {
     Links.forEach(function (Link) {
       var ReferralURL = Link.href;
-
-      Link.href = stripRedirect(ReferralURL, redirectRegex["rfd-redirects"]);
+      Link.href = stripRedirect(ReferralURL, result["redirects"]);
     });
   });
 }
