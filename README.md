@@ -14,21 +14,26 @@ Copy [script.js](./script.js) into Tampermonkey.
 
 ## Browser Extensions
 
-The browser extensions are currently not packaged or published anywhere.
-
-### Chrome
-
-To load the chrome extension, clone this repo and load [extensions/chrome](./extensions/chrome/).
+The browser extensions is currently not packaged or published anywhere.
 
 ### Firefox
 
-To load the firefox extension, clone this repo and load [extensions/firefox](./extensions/firefox/).
+To load the firefox extension, clone this repo and load the root dir.
 
 Go to `about:addons`, and ensure that all permissions are granted. If this is not done, the extension will not have permission to execute content scripts.
 
+### Building the extension
+
+To build the extension, run:
+
+```sh
+npm install
+npm run build
+```
+
 ## Updating redirects
 
-The browser extensions will update the list of redirects by periodically fetching the latest [redirects.json](redirects.json).
+The browser extension will update the list of redirects by periodically fetching the latest [redirects.json](redirects.json).
 
 Open a pull request to this repo to update the redirects.
 
@@ -40,6 +45,6 @@ New config can be tested by pointing the config url of the extension to your own
 
 For example:
 
-```
+```text
 https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/my-new-branch/redirects.json
 ```

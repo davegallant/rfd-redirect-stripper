@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "web-ext": "^7.6.0"
+  },
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir .",
+    "build": "web-ext build --overwrite-dest --ignore-files extensions/ --source-dir .",
+    "lint": "web-ext lint --source-dir .",
+    "sign": "web-ext sign --source-dir ."
+  }
+}
