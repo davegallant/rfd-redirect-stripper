@@ -14,7 +14,9 @@ Copy [script.js](./script.js) into Tampermonkey.
 
 ## Browser Extensions
 
-The browser extensions is currently not packaged or published anywhere.
+The browser extension is currently not packaged or published anywhere.
+
+There is currently not support for Chrome.
 
 ### Firefox
 
