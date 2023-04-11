@@ -14,15 +14,13 @@ Copy [script.js](./script.js) into Tampermonkey.
 
 ## Browser Extensions
 
-The browser extension is currently not packaged or published anywhere.
-
-There is currently not support for Chrome.
-
 ### Firefox
 
-To load the firefox extension, clone this repo and load the root dir.
+The extension is available [here](https://addons.mozilla.org/en-US/firefox/addon/rfd-redirect-stripper/).
 
-Go to `about:addons`, and ensure that all permissions are granted. If this is not done, the extension will not have permission to execute content scripts.
+Ensure that permissions are granted. If this is not done, the extension will not have permission to execute.
+
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/4519234/231030083-5ff5156a-deec-4e4d-8f35-ebba84a24be8.png">
 
 ### Building the extension
 
