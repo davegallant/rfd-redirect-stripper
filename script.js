@@ -53,7 +53,7 @@
         pattern: 'imp.i([0-9]*).net(.*)\?u=(?<baseUrl>.*)',
       },
       {
-        name: 'underarmour',
+        name: 'kqzyfj',
         pattern: 'www.awin1.com(.*)\?ued=(?<baseUrl>.*)',
       },
       {
@@ -62,12 +62,20 @@
       },
       {
         name: 'thesource',
-        pattern: 'www.kqzyfj.com(.*)\?url=(?<baseUrl>.*)',
+        pattern: 'www.kqzyfj.com(.*)?url=(?<baseUrl>.*)&sid=.*',
       },
       {
         name: 'walmart',
         pattern: 'click.linksynergy.com(.*)\?murl=(?<baseUrl>.*)&u1=.*',
       },
+      {
+        name: 'dpbolvw.net',
+        pattern: 'www.dpbolvw.net(.*)?url=(?<baseUrl>.*)',
+      },
+      {
+        name: "jdoqocy.com",
+        pattern: "www.jdoqocy.com(.*)?url=(?<baseUrl>.*)&sid=.*"
+      }
     ];
 
     var StripRedirect = function(URL) {
