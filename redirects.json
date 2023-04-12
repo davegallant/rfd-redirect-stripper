@@ -44,8 +44,8 @@
     "pattern": "(.*).evyy.net(.*)?u=(?<baseUrl>.*)"
   },
   {
-    "name": "thesource",
-    "pattern": "www.kqzyfj.com(.*)?url=(?<baseUrl>.*)"
+    "name": "kqzyfj",
+    "pattern": "www.kqzyfj.com(.*)?url=(?<baseUrl>.*)&sid=.*"
   },
   {
     "name": "walmart",
