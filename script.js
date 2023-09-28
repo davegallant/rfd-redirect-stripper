@@ -75,6 +75,14 @@
       {
         name: "jdoqocy.com",
         pattern: "www.jdoqocy.com(.*)?url=(?<baseUrl>.*)&sid=.*"
+      },
+      {
+        name: 'pxf.io',
+        pattern: '(.*).pxf.io(.*)\?u=(?<baseUrl>.*)',
+      },
+      {
+        name: 'avantlink.com',
+        pattern: '(.*).avantlink.com(.*)\?url=(?<baseUrl>.*)',
       }
     ];
 
