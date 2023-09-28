@@ -61,10 +61,10 @@
   },
   {
     "name": "pfx.io",
-    "pattern": "(.*).pxf.io(.*)\?u=(?<baseUrl>.*)"
+    "pattern": "(.*).pxf.io(.*)?u=(?<baseUrl>.*)"
   },
   {
     "name": "avantlink.com",
-    "pattern": "(.*).avantlink.com(.*)\?url=(?<baseUrl>.*)"
+    "pattern": "(.*).avantlink.com(.*)?url=(?<baseUrl>.*)"
   }
 ]
