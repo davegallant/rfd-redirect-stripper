@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "web-ext": "^7.8.0"
+    "web-ext": "^7.9.0"
   },
   "scripts": {
     "start:firefox": "web-ext run --source-dir .",
