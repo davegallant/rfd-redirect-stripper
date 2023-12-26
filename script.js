@@ -83,6 +83,10 @@
       {
         name: 'avantlink.com',
         pattern: '(.*).avantlink.com(.*)\?url=(?<baseUrl>.*)',
+      },
+      {
+        name: "anrdoezrs.net",
+        pattern: ".*anrdoezrs\\.net.+\\?url=(?<baseUrl>.*)&sid=.+"
       }
     ];
 
