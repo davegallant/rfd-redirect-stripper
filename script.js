@@ -90,7 +90,7 @@
       },
       {
         name: "tkqlhce.com",
-        pattern: "tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
+        pattern: ".*tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
       }
     ];
 
