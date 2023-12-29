@@ -15,9 +15,10 @@
     "default_popup": "html/popup.html"
   },
   "background": {
-    "scripts": ["js/utils.js", "js/background.js"]
+    "service_worker": "js/background.js",
+    "type": "module"
   },
-  "permissions": ["scripting", "storage"],
+  "permissions": ["scripting", "storage", "alarms"],
   "host_permissions": ["*://forums.redflagdeals.com/*"],
   "browser_specific_settings": {
     "gecko": {

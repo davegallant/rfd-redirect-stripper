@@ -1,6 +1,8 @@
+import { updateRedirects, setDefaultConfig } from "../js/utils.js"
+
+chrome.alarms.onAlarm.addListener(updateRedirects());
 chrome.runtime.onInstalled.addListener(() => {
   updateRedirects();
   setDefaultConfig();
+  chrome.alarms.create('update-redirects', { delayInMinutes: 60 });
 });
-
-setInterval(updateRedirects, 1 * 60 * 60 * 1000);

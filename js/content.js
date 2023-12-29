@@ -20,7 +20,7 @@ function stripRedirect(URL, redirectRegex) {
 function stripRedirects() {
   var Links = document.querySelectorAll("a.postlink, a.autolinker_link");
 
-  browser.storage.local.get("redirects", function (result) {
+  chrome.storage.local.get("redirects", function (result) {
     Links.forEach(function (Link) {
       var ReferralURL = Link.href;
       Link.href = stripRedirect(ReferralURL, result["redirects"]);

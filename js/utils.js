@@ -1,22 +1,25 @@
-function updateRedirects() {
-  browser.storage.local.get("config", function (URL) {
-    fetch(URL.config)
-      .then((res) => res.json())
-      .then((res) => {
-        browser.storage.local
-          .set({
-            redirects: res,
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      });
-  });
-}
+export function updateRedirects() {
+    chrome.storage.local.get("config", function (URL) {
+      fetch(URL.config)
+        .then((res) => res.json())
+        .then((res) => {
+          chrome.storage.local
+            .set({
+              redirects: res,
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
+  }
 
-function setDefaultConfig() {
-  browser.storage.local.set({
+export function setDefaultConfig() {
+  chrome.storage.local.set({
     config:
-      "https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/redirects.json",
-  });
+    "https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/redirects.json",
+});
 }
