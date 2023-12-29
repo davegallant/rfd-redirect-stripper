@@ -87,6 +87,10 @@
       {
         name: "anrdoezrs.net",
         pattern: ".*anrdoezrs\\.net.+\\?url=(?<baseUrl>.*)&sid=.+"
+      },
+      {
+        name: "tkqlhce.com",
+        pattern: "tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
       }
     ];
 
