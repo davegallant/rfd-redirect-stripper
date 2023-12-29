@@ -9,7 +9,6 @@ chrome.alarms.onAlarm.addListener(() => {
 });
 
 chrome.runtime.onInstalled.addListener(() => {
-  updateRedirects();
   setDefaultConfig();
-  chrome.alarms.create('update-redirects', { delayInMinutes: 60 });
+  updateRedirects();
 });
