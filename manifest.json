@@ -15,7 +15,8 @@
     "default_popup": "html/popup.html"
   },
   "background": {
-    "service_worker": "js/background.js",
+    "scripts": [ "js/background.js" ],
+    "service_worker": "background.js",
     "type": "module"
   },
   "permissions": ["scripting", "storage", "alarms"],
@@ -23,7 +24,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "davegallant@gmail.com",
-      "strict_min_version": "42.0"
+      "strict_min_version": "112.0"
     }
   }
 }
