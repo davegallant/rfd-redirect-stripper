@@ -91,6 +91,10 @@
       {
         name: "tkqlhce.com",
         pattern: ".*tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
+      },
+      {
+        name: "staples",
+        pattern: ".*staplescanada\\.4u8mqw\\.net.+\\?u=(?<baseUrl>.*)"
       }
     ];
 
