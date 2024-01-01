@@ -1,3 +1,5 @@
+import { updateRedirects, setDefaultConfig } from "../js/utils.js"
+
 const inputField = document.getElementById("input-field");
 const saveButton = document.getElementById("save-button");
 const resetButton = document.getElementById("reset-button");
@@ -5,7 +7,7 @@ const resetButton = document.getElementById("reset-button");
 const defaultConfig =
   "https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/redirects.json";
 
-browser.storage.local.get("config").then((result) => {
+chrome.storage.local.get("config").then((result) => {
   const value = result.config;
   if (value) {
     inputField.value = value;
@@ -14,7 +16,7 @@ browser.storage.local.get("config").then((result) => {
 
 saveButton.addEventListener("click", () => {
   const value = inputField.value;
-  browser.storage.local.set({ config: value });
+  chrome.storage.local.set({ config: value });
   updateRedirects();
 });
 

@@ -1,6 +1,24 @@
-chrome.runtime.onInstalled.addListener(() => {
+import { updateRedirects, setDefaultConfig } from "../js/utils.js"
+
+function setAlarm() {
+  chrome.alarms.get('update-redirects', alarm => {
+    if (!alarm) {
+      chrome.alarms.create('update-redirects', { periodInMinutes: 60 });
+    }
+  });
+}
+
+chrome.alarms.onAlarm.addListener(() => {
   updateRedirects();
-  setDefaultConfig();
 });
 
-setInterval(updateRedirects, 1 * 60 * 60 * 1000);
+chrome.runtime.onInstalled.addListener(() => {
+  setDefaultConfig();
+  updateRedirects();
+  setAlarm();
+});
+
+//Ensure alarm is created
+chrome.runtime.onStartup.addListener(() => {
+  setAlarm();
+});
