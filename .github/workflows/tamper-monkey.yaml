@@ -1,0 +1,30 @@
+name: "Generate Tampermonkey script"
+on:
+  pull_request:
+
+jobs:
+  gomplate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Install gomplate
+        run: |
+          wget -O gomplate https://github.com/hairyhenderson/gomplate/releases/download/v3.10.0/gomplate_linux-amd64
+          chmod +x gomplate
+          sudo mv gomplate /usr/local/bin/
+
+      - name: Run gomplate
+        run: gomplate < script.js.tmpl > script.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+          git add .
+          git commit -m "Update script.js using gomplate" || true
+          git push

@@ -16,87 +16,88 @@
     var Links = document.querySelectorAll('a.postlink, a.autolinker_link');
 
     const REDIRECT_REGEX = [
-      {
-        name: 'Amazon',
-        pattern: 'www.amazon.ca/gp/redirect.html\\?ie=UTF8&location=(?<baseUrl>.*?)(&|ref%3D|%3F)',
-      },
-      {
-        name: 'Best Buy',
-        pattern: 'bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'HP',
-        pattern: 'www.awin1.com(.*)\&clickref=\&p=(?<baseUrl>.*)\&.*',
-      },
-      {
-        name: 'Samsung',
-        pattern: 'www.awin1.com(.*)\?p=(?<baseUrl>.*)',
-      },
-      {
-        name: 'redirectingat.com',
-        pattern: 'go.redirectingat.com/.*url=(?<baseUrl>.*).*',
-      },
-      {
-        name: 'homedepot',
-        pattern: 'the-home-depot-ca.pxf.io(.*)\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'redirectingat',
-        pattern: 'go.redirectingat.com(.*)\?url=(?<baseUrl>.*)',
-      },
-      {
-        name: 'adidas-canada',
-        pattern: 'adidas-canada.sjv.io(.*)\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'canadiantire',
-        pattern: 'imp.i([0-9]*).net(.*)\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'kqzyfj',
-        pattern: 'www.awin1.com(.*)\?ued=(?<baseUrl>.*)',
-      },
-      {
-        name: 'lenovo',
-        pattern: '(.*).evyy.net(.*)\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'thesource',
-        pattern: 'www.kqzyfj.com(.*)?url=(?<baseUrl>.*)&sid=.*',
-      },
-      {
-        name: 'walmart',
-        pattern: 'click.linksynergy.com(.*)\?murl=(?<baseUrl>.*)&u1=.*',
-      },
-      {
-        name: 'dpbolvw.net',
-        pattern: 'www.dpbolvw.net(.*)?url=(?<baseUrl>.*)',
-      },
-      {
-        name: "jdoqocy.com",
-        pattern: "www.jdoqocy.com(.*)?url=(?<baseUrl>.*)&sid=.*"
-      },
-      {
-        name: 'pxf.io',
-        pattern: '(.*).pxf.io(.*)\?u=(?<baseUrl>.*)',
-      },
-      {
-        name: 'avantlink.com',
-        pattern: '(.*).avantlink.com(.*)\?url=(?<baseUrl>.*)',
-      },
-      {
-        name: "anrdoezrs.net",
-        pattern: ".*anrdoezrs\\.net.+\\?url=(?<baseUrl>.*)&sid=.+"
-      },
-      {
-        name: "tkqlhce.com",
-        pattern: ".*tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
-      },
-      {
-        name: "staples",
-        pattern: ".*staplescanada\\.4u8mqw\\.net.+\\?u=(?<baseUrl>.*)"
-      }
-    ];
+  {
+    "name": "Amazon",
+    "pattern": "www.amazon.ca/gp/redirect.html\\?ie=UTF8&location=(?<baseUrl>.*?)(&|ref%3D|%3F)"
+  },
+  {
+    "name": "Best Buy",
+    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "HP",
+    "pattern": "www.awin1.com(.*)&clickref=&p=(?<baseUrl>.*)&.*"
+  },
+  {
+    "name": "Samsung",
+    "pattern": "www.awin1.com(.*)?p=(?<baseUrl>.*)"
+  },
+  {
+    "name": "redirectingat.com",
+    "pattern": "go.redirectingat.com/.*url=(?<baseUrl>.*).*"
+  },
+  {
+    "name": "homedepot",
+    "pattern": "the-home-depot-ca.pxf.io(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "redirectingat",
+    "pattern": "go.redirectingat.com(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "adidas-canada",
+    "pattern": "adidas-canada.sjv.io(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "canadiantire",
+    "pattern": "imp.i([0-9]*).net(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "underarmour",
+    "pattern": "www.awin1.com(.*)?ued=(?<baseUrl>.*)"
+  },
+  {
+    "name": "lenovo",
+    "pattern": "(.*).evyy.net(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "kqzyfj",
+    "pattern": "www.kqzyfj.com(.*)?url=(?<baseUrl>.*)&sid=.*"
+  },
+  {
+    "name": "walmart",
+    "pattern": "click.linksynergy.com(.*)?murl=(?<baseUrl>.*)&u1=.*"
+  },
+  {
+    "name": "dpbolvw.net",
+    "pattern": "www.dpbolvw.net(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "jdoqocy.com",
+    "pattern": "www.jdoqocy.com(.*)?url=(?<baseUrl>.*)&sid=rfdcb"
+  },
+  {
+    "name": "pfx.io",
+    "pattern": "(.*).pxf.io(.*)?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "avantlink.com",
+    "pattern": "(.*).avantlink.com(.*)?url=(?<baseUrl>.*)"
+  },
+  {
+    "name": "anrdoezrs.net",
+    "pattern": ".*anrdoezrs\\.net.+\\?url=(?<baseUrl>.*)&sid=.*"
+  },
+  {
+    "name": "tkqlhce.com",
+    "pattern": ".*tkqlhce\\.com.+?url=(?<baseUrl>.*)&sid=.*"
+  },
+  {
+    "name": "staples",
+    "pattern": ".*staplescanada\\.4u8mqw\\.net.+\\?u=(?<baseUrl>.*)"
+  }
+]
+;
 
     var StripRedirect = function(URL) {
        for (var i = 0; i < REDIRECT_REGEX.length; i++) {
