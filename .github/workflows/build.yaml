@@ -19,7 +19,7 @@ jobs:
       - name: Get extension version
         id: vars
         run: |
-          VERSION=$(jq -r .version manifest.json)
+          version=$(jq -r .version manifest.json)
           echo "version=$version" >> $GITHUB_OUTPUT
           echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
 
@@ -35,5 +35,5 @@ jobs:
       - name: "Upload Artifact"
         uses: actions/upload-artifact@v4
         with:
-          name: target.xpi
+          name: "rfd-redirect-stripper-${{steps.vars.outputs.version}}-${{steps.vars.outputs.sha_short}}.xpi"
           path: ${{ steps.web-ext-build.outputs.target }}
