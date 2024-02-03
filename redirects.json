@@ -28,8 +28,8 @@
     "pattern": "go.redirectingat.com(.*)?url=(?<baseUrl>.*)"
   },
   {
-    "name": "adidas-canada",
-    "pattern": "adidas-canada.sjv.io(.*)?u=(?<baseUrl>.*)"
+    "name": "sjv.io",
+    "pattern": ".*sjv\\.io.*\\?u=(?<baseUrl>.*)"
   },
   {
     "name": "canadiantire",
