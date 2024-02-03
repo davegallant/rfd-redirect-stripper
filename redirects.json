@@ -78,5 +78,33 @@
   {
     "name": "staples",
     "pattern": ".*staplescanada\\.4u8mqw\\.net.+\\?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "pjtra.com",
+    "pattern": ".*pjtra\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pjatr.com",
+    "pattern": ".*pjatr\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntra.com",
+    "pattern": ".*pntra\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntrs.com",
+    "pattern": ".*pntrs\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntrac.com",
+    "pattern": ".*pntrac\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "shareasale.com",
+    "pattern": ".*shareasale\\.com.*&urllink=(?<baseUrl>.*)"
+  },
+  {
+    "name": "mkr3.net",
+    "pattern": ".*mkr3\\.net.*\\?u=(?<baseUrl>.*)"
   }
 ]
