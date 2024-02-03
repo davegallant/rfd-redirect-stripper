@@ -106,5 +106,13 @@
   {
     "name": "mkr3.net",
     "pattern": ".*mkr3\\.net.*\\?u=(?<baseUrl>.*)"
-  }
+  },
+	{
+	  "name": "fintelconnect.com",
+	  "pattern": ".*fintelconnect\\.com.*\\?u=(?<baseUrl>.*)"
+	},
+	{
+	  "name": "c2ukkg.net",
+	  "pattern": ".*c2ukkg\\.net.*\\?u=(?<baseUrl>.*)"
+	}
 ]
