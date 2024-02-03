@@ -1,7 +1,7 @@
 [
   {
     "name": "Amazon",
-    "pattern": "www.amazon.ca/gp/redirect.html\\?ie=UTF8&location=(?<baseUrl>.*?)(&|ref%3D|%3F)"
+    "pattern": ".*amazon\\.(?:ca|com)\/gp\/redirect\\.html\\?ie=UTF8&location=(?<baseUrl>.*?)(?:&|ref%3D|%3F)"
   },
   {
     "name": "Best Buy",
