@@ -18,11 +18,11 @@
     const REDIRECT_REGEX = [
   {
     "name": "Amazon",
-    "pattern": "www.amazon.ca/gp/redirect.html\\?ie=UTF8&location=(?<baseUrl>.*?)(&|ref%3D|%3F)"
+    "pattern": ".*amazon\\.(?:ca|com)\/gp\/redirect\\.html\\?ie=UTF8&location=(?<baseUrl>.*?)(?:&|ref%3D|%3F)"
   },
   {
     "name": "Best Buy",
-    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)"
+    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)\\?.*"
   },
   {
     "name": "HP",
@@ -45,8 +45,8 @@
     "pattern": "go.redirectingat.com(.*)?url=(?<baseUrl>.*)"
   },
   {
-    "name": "adidas-canada",
-    "pattern": "adidas-canada.sjv.io(.*)?u=(?<baseUrl>.*)"
+    "name": "sjv.io",
+    "pattern": ".*sjv\\.io.*\\?u=(?<baseUrl>.*)"
   },
   {
     "name": "canadiantire",
@@ -95,7 +95,47 @@
   {
     "name": "staples",
     "pattern": ".*staplescanada\\.4u8mqw\\.net.+\\?u=(?<baseUrl>.*)"
-  }
+  },
+  {
+    "name": "pjtra.com",
+    "pattern": ".*pjtra\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pjatr.com",
+    "pattern": ".*pjatr\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntra.com",
+    "pattern": ".*pntra\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntrs.com",
+    "pattern": ".*pntrs\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "pntrac.com",
+    "pattern": ".*pntrac\\.com.*\\?url=(?<baseUrl>.*)&sid.*"
+  },
+  {
+    "name": "shareasale.com",
+    "pattern": ".*shareasale\\.com.*&urllink=(?<baseUrl>.*)"
+  },
+  {
+    "name": "mkr3.net",
+    "pattern": ".*mkr3\\.net.*\\?u=(?<baseUrl>.*)"
+  },
+	{
+	  "name": "fintelconnect.com",
+	  "pattern": ".*fintelconnect\\.com.*\\?u=(?<baseUrl>.*)"
+	},
+	{
+	  "name": "c2ukkg.net",
+	  "pattern": ".*c2ukkg\\.net.*\\?u=(?<baseUrl>.*)"
+	},
+	{
+	  "name": "dodxnr.net",
+	  "pattern": ".*dodxnr\\.net.*\\?u=(?<baseUrl>.*)"
+	}
 ]
 ;
 
