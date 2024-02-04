@@ -1,6 +1,9 @@
 name: "Generate Tampermonkey script"
 on:
   pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   gomplate:
