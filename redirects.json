@@ -114,5 +114,9 @@
 	{
 	  "name": "c2ukkg.net",
 	  "pattern": ".*c2ukkg\\.net.*\\?u=(?<baseUrl>.*)"
+	},
+	{
+	  "name": "dodxnr.net",
+	  "pattern": ".*dodxnr\\.net.*\\?u=(?<baseUrl>.*)"
 	}
 ]
