@@ -26,7 +26,7 @@
   },
   {
     "name": "HP",
-    "pattern": "www.awin1.com(.*)&clickref=&p=(?<baseUrl>.*)&.*"
+    "pattern": "www.awin1.com(.*)&clickref=&p=(?<baseUrl>.*)"
   },
   {
     "name": "Samsung",
@@ -124,18 +124,18 @@
     "name": "mkr3.net",
     "pattern": ".*mkr3\\.net.*\\?u=(?<baseUrl>.*)"
   },
-	{
-	  "name": "fintelconnect.com",
-	  "pattern": ".*fintelconnect\\.com.*\\?u=(?<baseUrl>.*)"
-	},
-	{
-	  "name": "c2ukkg.net",
-	  "pattern": ".*c2ukkg\\.net.*\\?u=(?<baseUrl>.*)"
-	},
-	{
-	  "name": "dodxnr.net",
-	  "pattern": ".*dodxnr\\.net.*\\?u=(?<baseUrl>.*)"
-	}
+  {
+    "name": "fintelconnect.com",
+    "pattern": ".*fintelconnect\\.com.*\\?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "c2ukkg.net",
+    "pattern": ".*c2ukkg\\.net.*\\?u=(?<baseUrl>.*)"
+  },
+  {
+    "name": "dodxnr.net",
+    "pattern": ".*dodxnr\\.net.*\\?u=(?<baseUrl>.*)"
+  }
 ]
 ;
 
