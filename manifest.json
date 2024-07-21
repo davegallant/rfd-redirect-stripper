@@ -2,11 +2,15 @@
   "manifest_version": 3,
   "name": "rfd-redirect-stripper",
   "description": "Strip tracking redirects on rfd",
-  "version": "0.4",
+  "version": "0.5",
   "content_scripts": [
     {
-      "matches": ["*://forums.redflagdeals.com/*"],
-      "js": ["js/content.js"],
+      "matches": [
+        "*://forums.redflagdeals.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
       "run_at": "document_end"
     }
   ],
@@ -15,12 +19,19 @@
     "default_popup": "html/popup.html"
   },
   "background": {
-    "scripts": ["js/background.js"],
+    "scripts": [
+      "js/background.js"
+    ],
     "service_worker": "js/background.js",
     "type": "module"
   },
-  "permissions": ["scripting", "storage", "alarms"],
-  "host_permissions": ["*://forums.redflagdeals.com/*"],
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "*://forums.redflagdeals.com/*"
+  ],
   "browser_specific_settings": {
     "gecko": {
       "id": "davegallant@gmail.com",
