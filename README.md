@@ -14,11 +14,7 @@ The extension is available on [the chrome web store](https://chromewebstore.goog
 
 ### Firefox
 
-The extension is available [here](https://addons.mozilla.org/en-US/firefox/addon/rfd-redirect-stripper/).
-
-Ensure that permissions are granted. If this is not done, the extension will not have permission to execute.
-
-<img width="712" alt="image" src="https://user-images.githubusercontent.com/4519234/231030083-5ff5156a-deec-4e4d-8f35-ebba84a24be8.png">
+The add-on is available [here](https://addons.mozilla.org/en-US/firefox/addon/rfd-redirect-stripper/).
 
 ### Building the extension
 
