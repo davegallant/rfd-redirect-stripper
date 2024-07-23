@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "rfd-redirect-stripper",
   "description": "Strip tracking redirects on rfd",
-  "version": "0.5",
+  "version": "0.5.1",
   "content_scripts": [
     {
       "matches": [
@@ -28,9 +28,6 @@
   "permissions": [
     "storage",
     "alarms"
-  ],
-  "host_permissions": [
-    "*://forums.redflagdeals.com/*"
   ],
   "browser_specific_settings": {
     "gecko": {
