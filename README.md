@@ -1,18 +1,16 @@
 # rfd-redirect-stripper
 
-rfd-redirect-stripper strips affiliate redirects from deal links posted on https://forums.redflagdeals.com.
+rfd-redirect-stripper strips affiliate redirects from deal links posted on <https://forums.redflagdeals.com>.
 
 ## Why?
 
 This helps navigate around broken links when using certain adblockers.
 
-## Tampermonkey Script
-
-This was originally a [Tampermonkey](https://www.tampermonkey.net/) userscript before evolving into a browser extension.
-
-Copy [script.js](./script.js) into Tampermonkey.
-
 ## Browser Extensions
+
+### Chrome
+
+The extension is available on [the chrome web store](https://chromewebstore.google.com/detail/rfd-redirect-stripper/npnhoaofocjfjcjlglaihlhkbgaokmpa?authuser=0&hl=en).
 
 ### Firefox
 
@@ -48,3 +46,9 @@ For example:
 ```text
 https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/my-new-branch/redirects.json
 ```
+
+## Tampermonkey Script
+
+This was originally a [Tampermonkey](https://www.tampermonkey.net/) userscript before evolving into a browser extension.
+
+To use as a tampermonkey script, copy [script.js](./script.js) into Tampermonkey.
