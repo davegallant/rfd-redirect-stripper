@@ -22,7 +22,7 @@
   },
   {
     "name": "Best Buy",
-    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)\\?.*"
+    "pattern": "bestbuyca.(.*).net(.*)\\?u=(?<baseUrl>.*)"
   },
   {
     "name": "HP",
