@@ -7,7 +7,7 @@
 // @match        *://forums.redflagdeals.com/*
 // @namespace    http://tampermonkey.net/
 // @updateURL    https://raw.githubusercontent.com/davegallant/rfd-redirect-stripper/main/script.js
-// @version      2024-07-27
+// @version      2024-09-21
 // ==/UserScript==
 
 (function() {
