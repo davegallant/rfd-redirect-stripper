@@ -21,17 +21,7 @@ https://www.amazon.ca/dp/B09YXY3DKN
 
 This helps navigate around broken links when using certain adblockers.
 
-## Browser Extensions
-
-### Chrome
-
-The extension is available [here](https://chromewebstore.google.com/detail/rfd-redirect-stripper/npnhoaofocjfjcjlglaihlhkbgaokmpa?authuser=0&hl=en).
-
-### Firefox
-
-The add-on is available [here](https://addons.mozilla.org/en-US/firefox/addon/rfd-redirect-stripper/).
-
-### Building the extension
+## Building the extension
 
 To build the extension, run:
 
